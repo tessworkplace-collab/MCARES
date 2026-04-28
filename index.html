@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M•CARES App Support Layer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="brand">Mcares <span>× MTR</span></p>
+          <h1>App Support Layer</h1>
+        </div>
+        <p class="tagline">Light feedback. Shared flow.<br />Together, we care.</p>
+      </header>
+
+      <section class="screens">
+        <article class="phone" aria-label="Join screen">
+          <div class="status"></div>
+          <h2>M•CARES</h2>
+          <div class="card qr-panel">
+            <div class="mascot">🤖</div>
+            <div class="qr" aria-label="QR code"></div>
+          </div>
+          <h3>Join M•CARES</h3>
+          <p class="muted">Scan the QR code on the care seat to participate in the shared flow.</p>
+          <button class="btn primary">Scan QR Code</button>
+          <button class="btn ghost">Enter Code Manually</button>
+          <nav class="tabbar">
+            <span class="active">Home</span><span>Activity</span><span>Points</span><span>Profile</span>
+          </nav>
+        </article>
+
+        <article class="phone" aria-label="Live feed screen">
+          <div class="status"></div>
+          <h2>M•CARES</h2>
+          <h3 class="section-title">Live Feed</h3>
+          <div class="feed-list" id="feed"></div>
+          <nav class="tabbar">
+            <span class="active">Home</span><span>Activity</span><span>Points</span><span>Profile</span>
+          </nav>
+        </article>
+
+        <article class="phone" aria-label="Activity analytics screen">
+          <div class="status"></div>
+          <h3 class="section-title">Participation Activity</h3>
+          <div class="chips">
+            <button class="chip active" data-range="today">Today</button>
+            <button class="chip" data-range="week">This Week</button>
+            <button class="chip" data-range="month">This Month</button>
+          </div>
+          <p class="muted">Participation is spread across the MTR network.</p>
+          <div id="stations"></div>
+          <div class="callout">Every participation contributes to a better journey for everyone.</div>
+          <nav class="tabbar">
+            <span>Home</span><span class="active">Activity</span><span>Points</span><span>Profile</span>
+          </nav>
+        </article>
+
+        <article class="phone" aria-label="Success screen">
+          <div class="status"></div>
+          <h2>M•CARES</h2>
+          <h3 class="done">We did it!</h3>
+          <p class="muted center">Together, we made it happen.</p>
+          <div class="mascot done-mascot">🤖</div>
+          <div class="stack">
+            <div class="info"><strong>Confirmed!</strong><span>You've completed your participation.</span></div>
+            <div class="info"><strong>+10 pts</strong><span>Points earned</span></div>
+            <div class="info"><strong>Better journey</strong><span>Together, we move forward.</span></div>
+          </div>
+          <button class="btn primary">See Live Feed</button>
+          <button class="btn ghost">Back to Home</button>
+          <nav class="tabbar">
+            <span class="active">Home</span><span>Activity</span><span>Points</span><span>Profile</span>
+          </nav>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
